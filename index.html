@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">Palindrome Checker</h1>
+    </header>
+    <main>
+      <form id="text-form" class="text-form">
+        <label for="text-input" class="block text-center center input-label"
+          >Write a text and check if it is a palindrome</label
+        >
+        <input
+          type="text"
+          id="text-input"
+          class="text-input block center bold smooth"
+          autocomplete="off"
+          required
+        />
+        <button
+          type="button"
+          onclick="isPalindrome()"
+          id="check-btn"
+          class="check-btn block center bold smooth"
+        >
+          Check
+        </button>
+        <p id="result" class="result-text text-center bold"></p>
+      </form>
+      <details class="palindrome-definition">
+        <summary class="bold">What is a palindrome?</summary>
+        <p>
+          A palindrome is a word, phrase, or sequence that reads the same
+          backward as forward, e.g., madam or nurses run.
+        </p>
+      </details>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
